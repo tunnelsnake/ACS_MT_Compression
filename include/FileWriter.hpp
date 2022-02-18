@@ -48,11 +48,11 @@ public:
         {
             _f.close();
         }
-        std::cout << "Bytes Written: " << this->_bytes_written << "\n";
-        std::cout << "Metadata Bytes: " << this->_offsetTable.size() * sizeof(uint32_t) + sizeof(uint32_t) + sizeof(uint32_t) << "\n";
-        std::cout << std::flush;
+        // std::cout << "Bytes Written: " << this->_bytes_written << "\n";
+        // std::cout << "Metadata Bytes: " << this->_offsetTable.size() * sizeof(uint32_t) + sizeof(uint32_t) + sizeof(uint32_t) << "\n";
+        // std::cout << std::flush;
         for (unsigned int i = 0; i < _offsetTable.size(); i++) {
-            std::cout << _offsetTable[i] << std::endl;
+            // std::cout << _offsetTable[i] << std::endl;
         }
     }
 

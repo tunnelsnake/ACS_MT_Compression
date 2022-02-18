@@ -35,14 +35,14 @@ public:
             _f.read((char *)&nOffsetTableEntries, sizeof(uint32_t));
             this->_offsetTable.resize(nOffsetTableEntries);
             _f.read((char *)_offsetTable.data(), sizeof(uint32_t) * nOffsetTableEntries);
-            std::cout << "Offset Table Entries: " << nOffsetTableEntries << std::endl;
+            // std::cout << "Offset Table Entries: " << nOffsetTableEntries << std::endl;
             int sum = 0;
             for (unsigned int i = 0; i < _offsetTable.size(); i++) {
-                std::cout << "\t" << _offsetTable.at(i) << "\n";
+                // std::cout << "\t" << _offsetTable.at(i) << "\n";
                 sum += _offsetTable.at(i);
             }
-            std::cout << "Sum: " << sum << std::endl;
-            std::cout << std::flush;
+            // std::cout << "Sum: " << sum << std::endl;
+            // std::cout << std::flush;
         }
     }
 

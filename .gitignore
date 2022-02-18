@@ -1,3 +1,5 @@
 res/*
 .vscode/*
 *.out
+a.out
+zstd/*
